@@ -1,0 +1,4 @@
+3de65c,::1,POST,http://localhost/coolShoes/ec-cube/sudir/content/cache,1700814390,,200
+a09406,::1,POST,http://localhost/coolShoes/ec-cube/sudir/disable_maintenance/auto_maintenance,1700814422,,200
+1cbd30,::1,GET,http://localhost/coolShoes/ec-cube/sample/1,1700814653,bf6f8a,404
+bf6f8a,::1,GET,http://localhost/coolShoes/ec-cube/sample/1,1700814657,,404
