@@ -59,7 +59,7 @@ class __TwigTemplate_497b280adef06ae88b457b3507dd71c5b824ee219618d7c04d24bc28fd7
                 <a href=\"";
         // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
-        echo "?category_id=1\">
+        echo "?category_id=5\">
                     <img src=\"";
         // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/cover0.jpg"), "html", null, true);
@@ -70,7 +70,7 @@ class __TwigTemplate_497b280adef06ae88b457b3507dd71c5b824ee219618d7c04d24bc28fd7
                 <a href=\"";
         // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
-        echo "?category_id=5\">
+        echo "?category_id=1\">
                     <img src=\"";
         // line 27
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/cover2.jpg"), "html", null, true);
@@ -126,12 +126,12 @@ file that was distributed with this source code.
         </div>
         <div class=\"ec-categoryRole__list\">
             <div class=\"ec-categoryRole__listItem\">
-                <a href=\"{{ url('product_list') }}?category_id=1\">
+                <a href=\"{{ url('product_list') }}?category_id=5\">
                     <img src=\"{{ asset('assets/img/top/cover0.jpg') }}\">
                 </a>
             </div>
             <div class=\"ec-categoryRole__listItem\">
-                <a href=\"{{ url('product_list') }}?category_id=5\">
+                <a href=\"{{ url('product_list') }}?category_id=1\">
                     <img src=\"{{ asset('assets/img/top/cover2.jpg') }}\">
                 </a>
             </div>
