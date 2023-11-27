@@ -59,10 +59,10 @@ class __TwigTemplate_497b280adef06ae88b457b3507dd71c5b824ee219618d7c04d24bc28fd7
                 <a href=\"";
         // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
-        echo "?category_id=2\">
+        echo "?category_id=1\">
                     <img src=\"";
         // line 22
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/fpo_355x150.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/cover0.jpg"), "html", null, true);
         echo "\">
                 </a>
             </div>
@@ -70,21 +70,10 @@ class __TwigTemplate_497b280adef06ae88b457b3507dd71c5b824ee219618d7c04d24bc28fd7
                 <a href=\"";
         // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
-        echo "?category_id=1\">
-                    <img src=\"";
-        // line 27
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/fpo_355x150.png"), "html", null, true);
-        echo "\">
-                </a>
-            </div>
-            <div class=\"ec-categoryRole__listItem\">
-                <a href=\"";
-        // line 31
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
         echo "?category_id=5\">
                     <img src=\"";
-        // line 32
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/fpo_355x150.png"), "html", null, true);
+        // line 27
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/top/cover2.jpg"), "html", null, true);
         echo "\">
                 </a>
             </div>
@@ -112,7 +101,7 @@ class __TwigTemplate_497b280adef06ae88b457b3507dd71c5b824ee219618d7c04d24bc28fd7
 
     public function getDebugInfo()
     {
-        return array (  87 => 32,  83 => 31,  76 => 27,  72 => 26,  65 => 22,  61 => 21,  54 => 17,  49 => 15,  43 => 11,);
+        return array (  76 => 27,  72 => 26,  65 => 22,  61 => 21,  54 => 17,  49 => 15,  43 => 11,);
     }
 
     public function getSourceContext()
@@ -137,18 +126,13 @@ file that was distributed with this source code.
         </div>
         <div class=\"ec-categoryRole__list\">
             <div class=\"ec-categoryRole__listItem\">
-                <a href=\"{{ url('product_list') }}?category_id=2\">
-                    <img src=\"{{ asset('assets/img/top/fpo_355x150.png') }}\">
-                </a>
-            </div>
-            <div class=\"ec-categoryRole__listItem\">
                 <a href=\"{{ url('product_list') }}?category_id=1\">
-                    <img src=\"{{ asset('assets/img/top/fpo_355x150.png') }}\">
+                    <img src=\"{{ asset('assets/img/top/cover0.jpg') }}\">
                 </a>
             </div>
             <div class=\"ec-categoryRole__listItem\">
                 <a href=\"{{ url('product_list') }}?category_id=5\">
-                    <img src=\"{{ asset('assets/img/top/fpo_355x150.png') }}\">
+                    <img src=\"{{ asset('assets/img/top/cover2.jpg') }}\">
                 </a>
             </div>
         </div>

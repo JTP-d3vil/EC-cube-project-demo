@@ -53,70 +53,70 @@ class __TwigTemplate_baf5f90a35e82196135abe892d9fd82042219b81d7d215c85bc8eca1564
                     <span class=\"ec-secHeading__line\"></span>
                     <span class=\"ec-secHeading__ja\">";
         // line 19
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("新着商品"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("New Arrivals"), "html", null, true);
         echo "</span>
                     <a class=\"ec-inlineBtn--top\" href=\"";
         // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_list");
         echo "\">";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("more"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("more info"), "html", null, true);
         echo "</a>
                 </div>
             </div>
             <div class=\"ec-newItemRole__listItem\">
                 <a href=\"";
         // line 24
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "1"]);
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "4"]);
         echo "\">
                     <img src=\"";
         // line 25
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("cube-1.png", "save_image"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("1127142742_656428ce4b036.png", "save_image"), "html", null, true);
         echo "\">
                     <p class=\"ec-newItemRole__listItemTitle\">";
         // line 26
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("彩のジェラート\"CUBE\""), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("Nike Luka 2 \"Bred\" 2"), "html", null, true);
         echo "</p>
                     <p class=\"ec-newItemRole__listItemPrice\">";
         // line 27
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥1,200(税込)"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥18,150"), "html", null, true);
         echo "</p>
                 </a>
             </div>
             <div class=\"ec-newItemRole__listItem\">
                 <a href=\"";
         // line 31
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "2"]);
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "5"]);
         echo "\">
                     <img src=\"";
         // line 32
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("sand-1.png", "save_image"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("1127143351_65642a3f308b0.png", "save_image"), "html", null, true);
         echo "\">
                     <p class=\"ec-newItemRole__listItemTitle\">";
         // line 33
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("チェリーアイスサンド"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("Nike Air Uptempo"), "html", null, true);
         echo "</p>
                     <p class=\"ec-newItemRole__listItemPrice\">";
         // line 34
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥800(税込)"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥25,410"), "html", null, true);
         echo "</p>
                 </a>
             </div>
             <div class=\"ec-newItemRole__listItem\">
                 <a href=\"";
         // line 38
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "1"]);
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("product_detail", ["id" => "6"]);
         echo "\">
                     <img src=\"";
         // line 39
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Eccube\Twig\Extension\EccubeExtension']->getNoImageProduct(""), "save_image"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Eccube\Twig\Extension\EccubeExtension']->getNoImageProduct("1127143525_65642a9d45f6b.png"), "save_image"), "html", null, true);
         echo "\">
                     <p class=\"ec-newItemRole__listItemTitle\">";
         // line 40
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("彩のジェラート\"CUBE\" NEO"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("Factory Second Strand Cap-Toe Oxford Dress Shoe"), "html", null, true);
         echo "</p>
                     <p class=\"ec-newItemRole__listItemPrice\">";
         // line 41
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥600(税込)"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("￥48,950"), "html", null, true);
         echo "</p>
                 </a>
             </div>
@@ -167,29 +167,29 @@ file that was distributed with this source code.
                 <div class=\"ec-newItemRole__listItemHeading ec-secHeading--tandem\">
                     <span class=\"ec-secHeading__en\">{{ 'NEW ITEM'|trans }}</span>
                     <span class=\"ec-secHeading__line\"></span>
-                    <span class=\"ec-secHeading__ja\">{{ '新着商品'|trans }}</span>
-                    <a class=\"ec-inlineBtn--top\" href=\"{{ url('product_list') }}\">{{ 'more'|trans }}</a>
+                    <span class=\"ec-secHeading__ja\">{{ 'New Arrivals'|trans }}</span>
+                    <a class=\"ec-inlineBtn--top\" href=\"{{ url('product_list') }}\">{{ 'more info'|trans }}</a>
                 </div>
             </div>
             <div class=\"ec-newItemRole__listItem\">
-                <a href=\"{{ url('product_detail', {'id': '1'}) }}\">
-                    <img src=\"{{ asset('cube-1.png', 'save_image') }}\">
-                    <p class=\"ec-newItemRole__listItemTitle\">{{ '彩のジェラート\"CUBE\"'|trans }}</p>
-                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥1,200(税込)'|trans }}</p>
+                <a href=\"{{ url('product_detail', {'id': '4'}) }}\">
+                    <img src=\"{{ asset('1127142742_656428ce4b036.png', 'save_image') }}\">
+                    <p class=\"ec-newItemRole__listItemTitle\">{{ 'Nike Luka 2 \"Bred\" 2'|trans }}</p>
+                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥18,150'|trans }}</p>
                 </a>
             </div>
             <div class=\"ec-newItemRole__listItem\">
-                <a href=\"{{ url('product_detail', {'id': '2'}) }}\">
-                    <img src=\"{{ asset('sand-1.png', 'save_image') }}\">
-                    <p class=\"ec-newItemRole__listItemTitle\">{{ 'チェリーアイスサンド'|trans }}</p>
-                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥800(税込)'|trans }}</p>
+                <a href=\"{{ url('product_detail', {'id': '5'}) }}\">
+                    <img src=\"{{ asset('1127143351_65642a3f308b0.png', 'save_image') }}\">
+                    <p class=\"ec-newItemRole__listItemTitle\">{{ 'Nike Air Uptempo'|trans }}</p>
+                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥25,410'|trans }}</p>
                 </a>
             </div>
             <div class=\"ec-newItemRole__listItem\">
-                <a href=\"{{ url('product_detail', {'id': '1'}) }}\">
-                    <img src=\"{{ asset(''|no_image_product , 'save_image') }}\">
-                    <p class=\"ec-newItemRole__listItemTitle\">{{ '彩のジェラート\"CUBE\" NEO'|trans }}</p>
-                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥600(税込)'|trans }}</p>
+                <a href=\"{{ url('product_detail', {'id': '6'}) }}\">
+                    <img src=\"{{ asset('1127143525_65642a9d45f6b.png'|no_image_product , 'save_image') }}\">
+                    <p class=\"ec-newItemRole__listItemTitle\">{{ 'Factory Second Strand Cap-Toe Oxford Dress Shoe'|trans }}</p>
+                    <p class=\"ec-newItemRole__listItemPrice\">{{ '￥48,950'|trans }}</p>
                 </a>
             </div>
         </div>
