@@ -51,6 +51,14 @@ file that was distributed with this source code.
                         </dl>
                         <dl>
                             <dt>
+                                {{ form_label(form.ctype, 'Customer Type', {'label_attr': {'class': 'ec-label'}}) }}
+                            </dt>
+                            <dd>{{ form.ctype.vars.data }}
+                                {{ form_widget(form.ctype, { type: 'hidden'}) }}
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
                                 {{ form_label(form.company_name, '会社名', { 'label_attr': { 'class': 'ec-label'}}) }}
                             </dt>
                             <dd>

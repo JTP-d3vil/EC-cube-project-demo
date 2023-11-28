@@ -19,6 +19,7 @@ use Eccube\Form\Type\AddressType;
 use Eccube\Form\Type\KanaType;
 use Eccube\Form\Type\Master\JobType;
 use Eccube\Form\Type\Master\SexType;
+use Eccube\Form\Type\Master\ctypeType;
 use Eccube\Form\Type\NameType;
 use Eccube\Form\Type\PhoneNumberType;
 use Eccube\Form\Type\PostalType;
@@ -62,6 +63,9 @@ class EntryType extends AbstractType
                 'required' => true,
             ])
             ->add('kana', KanaType::class, [])
+            ->add('ctype', ctypeType::class, [
+                'required' => true,
+            ])
             ->add('company_name', TextType::class, [
                 'required' => false,
                 'constraints' => [

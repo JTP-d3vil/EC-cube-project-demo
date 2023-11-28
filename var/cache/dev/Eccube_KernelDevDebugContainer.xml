@@ -3479,6 +3479,9 @@
     <service id="Eccube\Form\Type\Master\SexType" class="Eccube\Form\Type\Master\SexType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="Eccube\Form\Type\Master\ctypeType" class="Eccube\Form\Type\Master\ctypeType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="Eccube\Form\Type\NameType" class="Eccube\Form\Type\NameType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
       <argument type="service" id="Eccube\Common\EccubeConfig"/>
@@ -3745,6 +3748,10 @@
       <argument type="service" id="doctrine"/>
     </service>
     <service id="Eccube\Repository\Master\WorkRepository" class="Eccube\Repository\Master\WorkRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="Eccube\Repository\Master\ctypeRepository" class="Eccube\Repository\Master\ctypeRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -5922,6 +5929,7 @@
         <argument>Eccube\Form\Type\Master\RoundingTypeType</argument>
         <argument>Eccube\Form\Type\Master\SaleTypeType</argument>
         <argument>Eccube\Form\Type\Master\SexType</argument>
+        <argument>Eccube\Form\Type\Master\ctypeType</argument>
         <argument>Eccube\Form\Type\NameType</argument>
         <argument>Eccube\Form\Type\PhoneNumberType</argument>
         <argument>Eccube\Form\Type\PostalType</argument>
@@ -8726,7 +8734,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.lFmyT1V"/>
+      <argument type="service" id=".service_locator.IdBWjaS"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="Eccube\Form\Extension\DoctrineOrmExtension"/>
@@ -10747,7 +10755,7 @@
     <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" abstract="true"/>
     <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true"/>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.nfytW9w"/>
+      <argument type="service" id=".service_locator.vEbUugF"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -12698,6 +12706,8 @@
     <service id=".abstract.instanceof.Eccube\Form\Type\Master\SaleTypeType" class="Eccube\Form\Type\Master\SaleTypeType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.Eccube\Form\Type\Master\SexType" class="Eccube\Form\Type\Master\SexType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.Eccube\Form\Type\Master\SexType" class="Eccube\Form\Type\Master\SexType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.Eccube\Form\Type\Master\ctypeType" class="Eccube\Form\Type\Master\ctypeType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.Eccube\Form\Type\Master\ctypeType" class="Eccube\Form\Type\Master\ctypeType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.Eccube\Form\Type\NameType" class="Eccube\Form\Type\NameType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.Eccube\Form\Type\NameType" class="Eccube\Form\Type\NameType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.Eccube\Form\Type\PhoneNumberType" class="Eccube\Form\Type\PhoneNumberType" autowire="true" abstract="true"/>
@@ -12822,6 +12832,8 @@
     <service id=".abstract.instanceof.Eccube\Repository\Master\TaxTypeRepository" class="Eccube\Repository\Master\TaxTypeRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.Eccube\Repository\Master\WorkRepository" class="Eccube\Repository\Master\WorkRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.Eccube\Repository\Master\WorkRepository" class="Eccube\Repository\Master\WorkRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.Eccube\Repository\Master\ctypeRepository" class="Eccube\Repository\Master\ctypeRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.Eccube\Repository\Master\ctypeRepository" class="Eccube\Repository\Master\ctypeRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.Eccube\Repository\MemberRepository" class="Eccube\Repository\MemberRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.Eccube\Repository\MemberRepository" class="Eccube\Repository\MemberRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.Eccube\Repository\NewsRepository" class="Eccube\Repository\NewsRepository" autowire="true" abstract="true"/>
@@ -14013,7 +14025,7 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.lFmyT1V" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.IdBWjaS" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="Eccube\Form\Type\AddCartType" type="service_closure" id="Eccube\Form\Type\AddCartType"/>
@@ -14100,6 +14112,7 @@
         <argument key="Eccube\Form\Type\Master\RoundingTypeType" type="service_closure" id="Eccube\Form\Type\Master\RoundingTypeType"/>
         <argument key="Eccube\Form\Type\Master\SaleTypeType" type="service_closure" id="Eccube\Form\Type\Master\SaleTypeType"/>
         <argument key="Eccube\Form\Type\Master\SexType" type="service_closure" id="Eccube\Form\Type\Master\SexType"/>
+        <argument key="Eccube\Form\Type\Master\ctypeType" type="service_closure" id="Eccube\Form\Type\Master\ctypeType"/>
         <argument key="Eccube\Form\Type\NameType" type="service_closure" id="Eccube\Form\Type\NameType"/>
         <argument key="Eccube\Form\Type\PhoneNumberType" type="service_closure" id="Eccube\Form\Type\PhoneNumberType"/>
         <argument key="Eccube\Form\Type\PostalType" type="service_closure" id="Eccube\Form\Type\PostalType"/>
@@ -14162,7 +14175,7 @@
         <argument key="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.nfytW9w" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.vEbUugF" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="Eccube\Repository\AuthorityRoleRepository" type="service_closure" id="Eccube\Repository\AuthorityRoleRepository"/>
@@ -14209,6 +14222,7 @@
         <argument key="Eccube\Repository\Master\TaxDisplayTypeRepository" type="service_closure" id="Eccube\Repository\Master\TaxDisplayTypeRepository"/>
         <argument key="Eccube\Repository\Master\TaxTypeRepository" type="service_closure" id="Eccube\Repository\Master\TaxTypeRepository"/>
         <argument key="Eccube\Repository\Master\WorkRepository" type="service_closure" id="Eccube\Repository\Master\WorkRepository"/>
+        <argument key="Eccube\Repository\Master\ctypeRepository" type="service_closure" id="Eccube\Repository\Master\ctypeRepository"/>
         <argument key="Eccube\Repository\MemberRepository" type="service_closure" id="Eccube\Repository\MemberRepository"/>
         <argument key="Eccube\Repository\NewsRepository" type="service_closure" id="Eccube\Repository\NewsRepository"/>
         <argument key="Eccube\Repository\OrderItemRepository" type="service_closure" id="Eccube\Repository\OrderItemRepository"/>
@@ -16526,7 +16540,7 @@
     <service id=".service_locator.IfIEjeF" alias=".service_locator..7aUMpZ"/>
     <service id=".service_locator.0BORT8o" alias=".service_locator.1eCA7tj"/>
     <service id=".service_locator.RGe.Eww" alias=".service_locator.wmwio2R"/>
-    <service id=".service_locator.yiHz2Bb" alias=".service_locator.lFmyT1V"/>
+    <service id=".service_locator.SBsHfBS" alias=".service_locator.IdBWjaS"/>
     <service id=".service_locator.B_10lrO" alias=".service_locator.tqxZlqB"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.8.TsCJj" alias=".service_locator.GK2uivj"/>

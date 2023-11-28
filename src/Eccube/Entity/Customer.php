@@ -269,6 +269,16 @@ if (!class_exists('\Eccube\Entity\Customer')) {
         private $Job;
 
         /**
+         * @var \Eccube\Entity\Master\ctype
+         *
+         * @ORM\ManyToOne(targetEntity="Eccube\Entity\Master\ctype")
+         * @ORM\JoinColumns({
+         *   @ORM\JoinColumn(name="ctype_id", referencedColumnName="id")
+         * })
+         */
+        private $Ctype;
+
+        /**
          * @var \Eccube\Entity\Master\Country
          *
          * @ORM\ManyToOne(targetEntity="Eccube\Entity\Master\Country")
@@ -1102,6 +1112,30 @@ if (!class_exists('\Eccube\Entity\Customer')) {
         public function getJob()
         {
             return $this->Job;
+        }
+
+        /**
+         * Set ctype.
+         *
+         * @param \Eccube\Entity\Master\ctype|null $ctype
+         *
+         * @return Customer
+         */
+        public function setctype(Master\ctype $ctype = null)
+        {
+            $this->Ctype = $ctype;
+
+            return $this;
+        }
+
+        /**
+         * Get ctype.
+         *
+         * @return \Eccube\Entity\Master\ctype|null
+         */
+        public function getctype()
+        {
+            return $this->Ctype;
         }
 
         /**
