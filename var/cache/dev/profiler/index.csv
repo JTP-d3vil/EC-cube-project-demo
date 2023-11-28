@@ -5,3 +5,6 @@ f5f225,::1,POST,http://localhost/coolShoes/ec-cube/entry,1701155127,,302
 3d66da,::1,GET,http://localhost/coolShoes/ec-cube/block/search_product,1701155129,8da828,200
 d4c148,::1,GET,http://localhost/coolShoes/ec-cube/block/search_product,1701155129,8da828,200
 8da828,::1,GET,http://localhost/coolShoes/ec-cube/entry/complete,1701155129,,200
+f8dcf1,::1,GET,http://localhost/coolShoes/ec-cube/block/search_product,1701155686,f4a446,200
+600052,::1,GET,http://localhost/coolShoes/ec-cube/block/search_product,1701155686,f4a446,200
+f4a446,::1,GET,http://localhost/coolShoes/ec-cube/entry,1701155686,,200
