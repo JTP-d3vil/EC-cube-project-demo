@@ -1121,7 +1121,7 @@ if (!class_exists('\Eccube\Entity\Customer')) {
          *
          * @return Customer
          */
-        public function setctype(Master\ctype $ctype = null)
+        public function setCtype(Master\ctype $ctype = null)
         {
             $this->Ctype = $ctype;
 
@@ -1133,7 +1133,7 @@ if (!class_exists('\Eccube\Entity\Customer')) {
          *
          * @return \Eccube\Entity\Master\ctype|null
          */
-        public function getctype()
+        public function getCtype()
         {
             return $this->Ctype;
         }

@@ -57,7 +57,7 @@ class EntryType extends AbstractType
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
-    {
+    { 
         $builder
             ->add('name', NameType::class, [
                 'required' => true,
@@ -65,12 +65,19 @@ class EntryType extends AbstractType
             ->add('kana', KanaType::class, [])
             ->add('ctype', ctypeType::class, [
                 'required' => true,
+                'attr' => [
+                    'class' => 'ctype-dropdown', 
+                ],
             ])
             ->add('company_name', TextType::class, [
-                'required' => false,
+                'required' => true,
+                'attr' => [
+                    'class' => 'company_name'],
                 'constraints' => [
+                    // new Assert\NotBlank(),
                     new Assert\Length([
                         'max' => $this->eccubeConfig['eccube_stext_len'],
+                        
                     ]),
                 ],
             ])
@@ -124,6 +131,12 @@ class EntryType extends AbstractType
             $Customer = $event->getData();
             if ($Customer->getPlainPassword() != '' && $Customer->getPlainPassword() == $Customer->getEmail()) {
                 $form['plain_password']['first']->addError(new FormError(trans('common.password_eq_email')));
+            }
+            //dd($Customer->getCtype()['id'] != '1' );
+            if ($Customer->getCtype()['id'] != '1' && $Customer->getCompanyName() == '') {
+                
+                $form['company_name']->addError(new FormError('Please Enter Company Name.'));
+                
             }
         });
     }

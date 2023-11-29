@@ -16,6 +16,33 @@ file that was distributed with this source code.
 
 {% block javascript %}
     <script src="//yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var ctypeDropdown = document.querySelector('.ctype-dropdown');
+            var company_name = document.querySelector('.company_name');
+    
+            
+            function updateAdditionalFieldState() {
+                var selectedCtype = ctypeDropdown.value;
+                if (selectedCtype != 1) {
+                    company_name.required=true;
+                    company_name.disabled=false;
+                    company_name.style.display='block';
+
+                } else {
+                    company_name.disabled=true;
+                    company_name.required=false;
+                    company_name.style.display='none';
+                    
+                }
+                console.log(company_name.value);
+                console.log(selectedCtype);
+            }    
+            updateAdditionalFieldState();
+                
+            ctypeDropdown.addEventListener('change', updateAdditionalFieldState);
+        });
+    </script>
 {% endblock javascript %}
 
 {% block main %}
@@ -66,7 +93,7 @@ file that was distributed with this source code.
                                 </div>
                             </dd>
                         </dl>
-                        <dl> 
+                        <dl class="company_name"> 
                             <dt>
                                 {{ form_label(form.company_name, '会社名', { 'label_attr': { 'class': 'ec-label' }}) }}
                             </dt>
