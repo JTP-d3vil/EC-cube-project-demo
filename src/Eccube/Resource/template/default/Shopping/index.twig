@@ -196,6 +196,27 @@ file that was distributed with this source code.
                                     </div>
                                 </dd>
                             </dl>
+                            <dt>
+                                {{ form_label(form.ctype, 'Customer Type', { 'label_attr': {'class': 'ec-label' }}) }}
+                            </dt>
+                            <dd>
+                                <div class="ec-select{{ has_errors(form.ctype) ? ' error' }}">
+                                    {{ form_widget(form.ctype) }}
+                                    {{ form_errors(form.ctype) }}
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="company_name"> 
+                            <dt>
+                                {{ form_label(form.company_name, '会社名', { 'label_attr': { 'class': 'ec-label' }}) }}
+                            </dt>
+                            <dd>
+                                <div class="ec-halfInput{{ has_errors(form.company_name) ? ' error' }}">
+                                    {{ form_widget(form.company_name) }}
+                                    {{ form_errors(form.company_name) }}
+                                </div>
+                            </dd>
+                        </dl>
                             <dl>
                                 <dt>
                                     <label class="ec-label" for="nonmember_company_name">{{ '会社名'|trans }}</label>

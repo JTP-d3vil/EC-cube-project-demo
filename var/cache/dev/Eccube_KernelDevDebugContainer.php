@@ -16,6 +16,6 @@ if (!\class_exists(Eccube_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerLNJE5ut\Eccube_KernelDevDebugContainer([
     'container.build_hash' => 'LNJE5ut',
-    'container.build_id' => '6a7f0aff',
-    'container.build_time' => 1701242218,
+    'container.build_id' => '5456aa4c',
+    'container.build_time' => 1701318731,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerLNJE5ut');
